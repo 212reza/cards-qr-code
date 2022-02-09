@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--1-->
+    <div id="wadah-bulat" class="wadah-bulat">
+      <i class="bulat"></i>
+    </div>
     <!--container / caards-->
     <div class="container">
       <img src="./images/image-qr-code.png" alt="QR-Code" />
@@ -21,5 +25,13 @@
       Coded by
       <a href="#"> Your Name Here </a>
     </div>
+    <script>
+      const body = document.querySelector('body');
+      const wadah = document.getElementById('wadah-bulat');
+      wadah.onclick = function () {
+        wadah.classList.toggle('active');
+        body.classList.toggle('active');
+      };
+    </script>
   </body>
 </html>
